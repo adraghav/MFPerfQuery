@@ -52,6 +52,6 @@ Instructions
         9. Since Inception Return
         10. Since Inception Rank / Cat Funds
         11. Updated On
-6. Run the script `python3 MFQuery.py`
+6. Run the script `python3 MFPerfQuery.py`
 7. Choose 1 if providing a direct mutual fund URL. Output will be presented on the terminal session itself.
 8. Choose 2 if providing a Excel workbook with mutual fund URL(s). Output will be written to the same Excel workbook.
