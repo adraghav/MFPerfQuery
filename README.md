@@ -17,17 +17,29 @@ Features
 =============
 
 * Get performance and key metrics for any Mutual Fund in India on-demand.
-* Input can be a single mutual fund or multiple through an Excel file.
+* All data from Mutual Funds on https://www.moneycontrol.com/mutualfundindia/ .
+* Input can be through a direct URL or an Excel file with list of Mutual Funds URLs.
+* Obtains the following performance metrics and parameters:
+    * Category of the fund
+    * CRISIL Star Rank
+    * Risk Rating
+    * Total Expense Ratio % vs Category Average
+    * 3 Year Return %
+    * 3 Year Rank among Funds in Category
+    * 5 Year Return %
+    * 5 Year Rank among Funds in Category
+    * Since Inception Return %
+    * Since Inception Rank among Funds in Category
 
 Instructions
 =============
 1. Download the package.
 2. Launch terminal session from the root folder of the package.
 3. Install requirements `pip3 install -r requirements.txt`
-4. For single mutual fund, obtain the URL of the requisite mutual fund from https://www.moneycontrol.com/mutualfundindia/ .
+4. For single mutual fund, obtain the URL of the requisite mutual fund.
 5. For multiple mutual funds, build an Excel (.xlsx) workbook with the following. See Sample.xlsx for sample excel workbook.
     1. Sheetname should be Mutual Funds
-    2. Column 1 with the URL(s) of requisite mutual funds from https://www.moneycontrol.com/mutualfundindia/ . 
+    2. Column 1 with the URL(s) of requisite mutual funds. 
     3. Row 1 with headers from column 2 onwards for writing the data in respective cells. Order of headers is not significant.
         1. Category
         2. CRISIL Star Rank
