@@ -3,7 +3,7 @@
 Python library for extracting certain performance parameters of Mutual Funds in India from https://moneycontrol.com
 
 ![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
-# [![Pypi](https://img.shields.io/badge/pypi-v1.8-green)](https://pypi.python.org/pypi/mftool)
+[![Pypi](https://img.shields.io/badge/pypi-v1.8-green)](https://pypi.org/project/mfperfquery/)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 ![License](https://img.shields.io/pypi/l/selenium-wire.svg)
 
