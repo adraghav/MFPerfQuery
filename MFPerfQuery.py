@@ -124,9 +124,9 @@ if choice.isdigit():
             print(message)
             quit()
     elif int(choice) == 2:
-        get_url = input("Enter the full path of the Excel (xlsx) workbook: ")
+        get_file = input("Enter the full path of the Excel (xlsx) workbook: ")
         try:
-            the_file = openpyxl.load_workbook(get_url)
+            the_file = openpyxl.load_workbook(get_file)
         except FileNotFoundError:
             print("Workbook not found")
             quit()
@@ -233,27 +233,27 @@ for lines in range(1,len(soup)+1):
         #Skip writing when data is not available and skip row 1 since it has the Column headers
         if lines != 1 and soup[lines-1] != " ":
             if col_letter[0] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[0],ter_value[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[0],ter_value[lines-1])
             if col_letter[1] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[1],y3_gain[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[1],y3_gain[lines-1])
             if col_letter[2] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[2],y3_rank[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[2],y3_rank[lines-1])
             if col_letter[3] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[3],y5_gain[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[3],y5_gain[lines-1])
             if col_letter[4] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[4],y5_rank[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[4],y5_rank[lines-1])
             if col_letter[5] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[5],incep_gain[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[5],incep_gain[lines-1])
             if col_letter[6] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[6],incep_rank[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[6],incep_rank[lines-1])
             if col_letter[7] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[7],today.strftime("%d/%m/%Y"))
+                write_excel(get_file,sheet_name,lines,col_letter[7],today.strftime("%d/%m/%Y"))
             if col_letter[8] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[8],crisil[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[8],crisil[lines-1])
             if col_letter[9] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[9],risk[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[9],risk[lines-1])
             if col_letter[10] != " ":
-                write_excel(get_url,sheet_name,lines,col_letter[10],cat[lines-1])
+                write_excel(get_file,sheet_name,lines,col_letter[10],cat[lines-1])
     else:
         #We know choice = 1 i.e. URL based query so print out details
         print("Category                      = {}" .format(cat[lines-1]))

@@ -7,6 +7,8 @@ Python library for extracting certain performance parameters of Mutual Funds in 
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 ![License](https://img.shields.io/pypi/l/selenium-wire.svg)
 
+Version 1.0.2
+
 Introduction
 ============
 Were you given a set of Mutual Funds as suggestion to invest? Are you already invested in few mutual funds?
@@ -55,3 +57,5 @@ Instructions
 6. Run the script `python3 MFPerfQuery.py`
 7. Choose 1 if providing a direct mutual fund URL. Output will be presented on the terminal session itself.
 8. Choose 2 if providing a Excel workbook with mutual fund URL(s). Output will be written to the same Excel workbook.
+
+Author Contact: aditya14920251@gmail.com
